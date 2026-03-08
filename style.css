@@ -1,0 +1,181 @@
+:root {
+    --title-text: #808080
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid black; */
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    width: 390px;
+    height: 100%;
+    margin: auto;
+    color: white;
+    /* border-color: red; */
+}
+
+.header {
+    background-color: #6635c4;
+    display: flex;
+    padding: 5px;
+
+}
+
+.heading {
+    flex-grow: 1;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    padding-left: 5px;
+}
+
+.content {
+    border-color: red;
+    height: 80%;
+    padding: 10px;
+}
+
+.cardHeader {
+    height: 20%;
+    border-color: green;
+    border-radius: 5px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#374df3+0,3e41ee+25,3d40eb+26,3d40eb+26,4040ec+26,3e3eea+32,433de9+33,453de7+41,5232e0+67,522fdd+74,5630de+74,582ddb+82,6129d9+90,6029d7+95,6527d7+100 */
+    background: linear-gradient(to right, #374df3 0%, #3e41ee 25%, #3d40eb 26%, #3d40eb 26%, #4040ec 26%, #3e3eea 32%, #433de9 33%, #453de7 41%, #5232e0 67%, #522fdd 74%, #5630de 74%, #582ddb 82%, #6129d9 90%, #6029d7 95%, #6527d7 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+}
+
+.c-h-con-1 {
+    height: 70%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0px
+}
+
+.c-h-con-2 {
+    height: 30%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 14px;
+}
+
+.cardDetails {
+    height: 70%;
+    margin: 5px 0px;
+    color: black;
+    box-shadow: 1px 1px 6px -2px;
+
+    position: relative;
+
+}
+
+.cardFooter {
+    height: 10%;
+    border-color: pink;
+    padding: 3px 0px;
+}
+
+.cardFooter button {
+    width: 100%;
+    height: 100%;
+    background-color: #263ef8;
+}
+
+.con {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    border: 0px solid darkgreen;
+    border-top-left-radius: 50px;
+
+}
+
+.con-bg {
+    height: 40px;
+    width: 100%;
+    position: absolute;
+    background-color: greenyellow;
+    /* border: 10px solid yellow; */
+}
+
+.cardDetailsHeader {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: dashed 2px #808080;
+}
+
+
+.entryBox {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    flex-grow: 1;
+    /* border: 1px solid black; */
+}
+
+.entryBar {
+    display: flex;
+    flex-grow: 1;
+    /* border: 1px solid red; */
+    padding: 2px;
+
+}
+
+.entry1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* border: 1px solid green; */
+    flex-grow: 1;
+    padding: 5px 3px;
+}
+
+.entry2 {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 3px;
+    align-items: flex-end;
+    justify-content: space-between;
+    /* border: 1px solid green; */
+    flex-grow: 1;
+}
+
+.en-title {
+    color: gray;
+}
+
+.en-value {
+    color: black;
+    font-weight: bold;
+}
+
+.entryBox :nth-last-child(1 of .entryBar) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.entryBar p {
+    text-align: center;
+}
